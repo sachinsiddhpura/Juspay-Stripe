@@ -1,0 +1,15 @@
+{% load static %}
+{% block content %}
+<div class="container">
+<div class="jubotron">
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	<h1>Your Order Id is: {{order_id}}</h1>
+	<h2>Your Phone Number: {{customer_phone}}</h2>
+	<h3>Your Email Address: {{customer_email}}</h3>
+	<h4>Your ID: {{customer_id}}</h4>
+	<h1>Your Payment is <strong style="color: red;">{{amount}}</strong> Are You Sure Want to Pay??</h1>
+	<p>If you sure want to pay just click on Pay Now Button..</p>
+	<a class="btn btn-primary" href="{{ links.mobile }}">Pay Now</a>
+</div>
+</div>
+{% endblock %}
